@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CENTRO COMERCIAL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url('img/fondo1.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-2 col-sm-2 col-md-4 col-lg-4 col-xl-4">
+                <!--PRIMERA COLUMNA-->
+            </div>
+            <div class="col-8 col-sm-8 col-md-4 col-lg-4 col-xl-4">
+                <!--SEGUNDA COLUMNA-->
+                <div class="card" style="margin-top: 8rem; background: rgba(255, 255, 255, 0.75)">
+                    <div class="card-body">
+                        <h5 align="center" class="card-title">LOGIN</h5>
+                        <h6 align="center" class="card-subtitle mb-2 text-muted">Bienvenido al MALL</h6>
+                        <form>
+                            <div class="form-group">
+                                <label for="txtCorreo">Dirección de correo</label>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="txtCorreo">@</span>
+                                    </div>
+                                    <input value="cliente1@gmail.com" type="email" class="form-control" id="txtCorreo" aria-describedby="emailHelp" placeholder="Ingresar correo">
+                                </div>
+                                <small id="emailHelp" class="form-text text-muted">No compartiremos tu correo con nadie</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="txtPassword">Contraseña</label>
+                                <input value="asd.456" type="password" class="form-control" id="txtPassword" placeholder="Ingresar contraseña">
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="chkMantenerSesion">
+                                <label class="form-check-label" for="chkMantenerSesion">Mantener sesión iniciciada</label>
+                            </div>
+                            <button type="button" class="btn btn-primary" id="btnLogin">Login</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 col-sm-2 col-md-4 col-lg-4 col-xl-4">
+                <!--TERCERA COLUMNA-->
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/controlador.js"></script>
+</body>
+
+</html>

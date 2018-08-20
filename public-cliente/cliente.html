@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CLIENTE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url('img/fondo2.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#" id="barra">THE MALL</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="btnInicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="btnFavoritos">Favoritos</a>
+                </li>
+                <!--<li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a id="btnAccion" class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>-->
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="btnRecomendaciones">Recomendaciones</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0 ml-auto">
+                <button class="btn btn-outline-danger my-2 my-sm-0" type="button" id="btnLogout">Logout</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-0 col-sm-0 col-md-1 col-lg-1 col-xl-1">
+                <!--PRIMERA COLUMNA-->
+            </div>
+            <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10">
+                <!--SEGUNDA COLUMNA-->
+                <div id="principal">
+                    <div class="card" id="buscador" style="margin-top: 15rem; background: rgba(255, 255, 255, 0.75)">
+                        <div class="card-body">
+                            <h5 align="center" class="card-title">THE MALL</h5>
+                            <div class="input-group mb-3">
+                                <input value="PULL & BEAR" type="text" class="form-control" placeholder="Buscar" aria-label="Buscar" aria-describedby="btnBuscar">
+                                <div class="input-group-append">
+                                    <button class="btn btn-success" type="button" id="btnBuscar">Buscar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="contenido">
+                        <div class="card" style="margin-top: 5rem; background: rgba(255, 255, 255, 0.75)">
+                            <div class="card-body">
+                                <h5 align="center" class="card-title">RESULTADOS</h5>
+                            </div>
+                        </div>
+                        <div class="card" style="margin-top: 1rem; background: rgba(255, 255, 255, 0.75)">
+                            <div class="card-body">
+                                <div class="media img-thumbnail">
+                                    <img class="align-self-center mr-3 img-fluid" style="width: 50%" src="img/tienda1.jpg" alt="Generic placeholder image">
+                                    <div class="media-body">
+                                        <h5 class="mt-0">PULL & BEAR</h5>
+                                        <ul class="nav nav-tabs">
+                                            <li class="nav-item">
+                                                <button id="btnInformacion" type="button" class="nav-link active">Información</button>
+                                            </li>
+                                            <li class="nav-item">
+                                                <button id="btnUbicacion" type="button" class="nav-link">Ubicación</button>
+                                            </li>
+                                            <li class="nav-item">
+                                                <button id="btnOfertas" type="button" class="nav-link">Ofertas</button>
+                                            </li>
+                                            <li class="nav-item">
+                                                <button id="btnCatalogo" type="button" class="nav-link">Catálogo</button>
+                                            </li>
+                                        </ul>
+                                        <div id="informacion">
+                                            INFORMACION
+                                        </div>
+                                        <div id="ubicacion">
+                                            UBICACION
+                                        </div>
+                                        <div id="ofertas">
+                                            OFERTAS
+                                        </div>
+                                        <div id="catalogo">
+                                            CATALOGO
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="favoritos">
+                    <div class="card" style="margin-top: 5rem; background: rgba(255, 255, 255, 0.75)">
+                        <div class="card-body">
+                            <div class="accordion" id="accordionExample">
+                                <div class="card">
+                                    <div class="card-header" id="headingOne">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                Calvin Klein
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                                                    <img style="width: 100%" src="img/tienda3.jpg" alt="">
+                                                </div>
+                                                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                                                    <p>Descripción de la tineda</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingTwo">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                                aria-controls="collapseTwo">
+                                                Adidas
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                                                    <img style="width: 100%" src="img/tienda4.jpg" alt="">
+                                                </div>
+                                                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                                                    <p>Descripción de la tineda</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingThree">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                                aria-controls="collapseThree">
+                                                American Brands Store
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                                                    <img style="width: 100%" src="img/tienda5.jpg" alt="">
+                                                </div>
+                                                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                                                    <p>Descripción de la tineda</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="recomendaciones">
+                    <h2>RECOMENDACIONES</h2>
+                </div>
+            </div>
+            <div class="col-0 col-sm-0 col-md-1 col-lg-1 col-xl-1">
+                <!--TERCERA COLUMNA-->
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/controladorCliente.js"></script>
+</body>
+
+</html>
